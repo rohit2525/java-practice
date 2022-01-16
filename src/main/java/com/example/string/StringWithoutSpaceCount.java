@@ -5,11 +5,11 @@ import java.util.Map;
 
 public class StringWithoutSpaceCount {
 
-    static Map<String, Integer> getCount(String input){
+    static Map<String, Integer> getCount(String input) {
         String[] splitInput = input.split("(?=\\p{Upper})");
         Map<String, Integer> map = new HashMap<>();
 
-        for (String charInput: splitInput)
+        for (String charInput : splitInput)
             if (map.containsKey(charInput)) {
                 int temp = map.get(charInput) + 1;
                 map.put(charInput, temp);
@@ -20,10 +20,11 @@ public class StringWithoutSpaceCount {
     }
 
     public static void main(String[] args) {
-        String input ="MyNameIsNishantMyNameIsNishant";
+        String input = "MyNameIsNishantMyNameIsNishantMy";
         Map<String, Integer> count = getCount(input);
-        for (Map.Entry<String, Integer> entry : count.entrySet()) {
+        /*for (Map.Entry<String, Integer> entry : count.entrySet()) {
             System.out.print(entry.getKey() + "-" + entry.getValue()+", ");
-        }
+        }*/
+        count.entrySet().stream().forEach(e -> System.out.print(e.getKey() + ":" + e.getValue() + ", "));
     }
 }

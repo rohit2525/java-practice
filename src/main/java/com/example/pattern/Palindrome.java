@@ -8,6 +8,7 @@ public class Palindrome {
         String palindromeString="madam";
         isPaindrome(input);
 
+
     }
 
     static void isPaindrome(String input)

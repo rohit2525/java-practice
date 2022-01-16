@@ -1,4 +1,4 @@
-package com.example.list;
+package com.example.leetcode;
 
 import java.util.Arrays;
 import java.util.Collection;

@@ -1,12 +1,14 @@
 package com.example.string;
 
+import lombok.extern.log4j.Log4j2;
+
 import java.util.HashMap;
 import java.util.Map;
 
-public class WordCount {
+@Log4j2
+public class countChar {
     public static void main(String[] args) {
-        String input = "344888556";
-
+        String input = "aabccdghhgaa";
         Map<Character, Integer> map = new HashMap<>();
 
         for (int i = 0; i < input.length(); i++) {
@@ -17,15 +19,8 @@ public class WordCount {
                 map.put(input.charAt(i), 1);
             }
         }
-
-        map.entrySet().stream()
-                .sorted(Map.Entry.comparingByValue())
-                .forEach(e -> printData(e));
-    }
-
-    static void printData(Map.Entry<Character, Integer> e) {
-        for(int i=0;i< e.getValue();i++)
-            System.out.print(e.getKey()+" ");
-
+        for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+            System.out.print(entry.getKey() + "=" + entry.getValue() + " ");
+        }
     }
 }

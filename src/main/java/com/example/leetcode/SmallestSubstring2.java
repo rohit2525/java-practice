@@ -29,6 +29,7 @@ public class SmallestSubstring2 {
                 }
             }
         }
+        System.out.println(map);
        /* return map.keySet().stream() //map to stream
                 .filter(s -> map.get(s) == 1) //get single occurrence of substring
                 .min(Comparator.comparingInt(String::length)).get();*/ // get minimum length string*/
@@ -48,6 +49,8 @@ public class SmallestSubstring2 {
 
     public static void main(String[] args) {
         System.out.println(smallestSubstring("abaaba"));
-        System.out.println(smallestSubstring("zyzyzyz"));
+       // System.out.println(smallestSubstring("zyzyzyz"));
+       // System.out.println(smallestSubstring("abcabcbb"));
+
     }
 }

@@ -22,5 +22,9 @@ public class listWithStream {
         strings.stream().reduce((str1, str2) -> str1 + " - " + str2).ifPresent(System.out::print);
         System.out.println("\n-------------------------------------------------------");
         System.out.print(strings.stream().map(Integer::parseInt).reduce(Integer::sum).get());
+        System.out.println("\n-------------------------------------------------------");
+        System.out.print(strings.stream().map(Integer::parseInt).reduce(Integer::min).get());
+        System.out.println("\n-------------------------------------------------------");
+        System.out.print(strings.stream().map(Integer::parseInt).reduce(Integer::max).get());
     }
 }
