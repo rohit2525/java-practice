@@ -1,4 +1,4 @@
-package com.example.array;
+package com.example.extra.array;
 
 public class reverseNumber {
     public static void main(String[] args) {

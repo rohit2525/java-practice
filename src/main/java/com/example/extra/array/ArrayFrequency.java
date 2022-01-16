@@ -1,4 +1,4 @@
-package com.example.array;
+package com.example.extra.array;
 
 public class ArrayFrequency {
  /*   Write a function called same, which accepts 2 arrays. The function should return true if every value in the array has it's corresponding value squared in the 2nd array. The frequency of the values must be same and order doesn't matter.

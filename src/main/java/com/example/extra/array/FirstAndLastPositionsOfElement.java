@@ -1,4 +1,4 @@
-package com.example.array;
+package com.example.extra.array;
 /*Find first and last positions of an element in a sorted array
 * Input : arr[] = {1, 3, 5, 5, 5, 5, 67, 123, 125}
         x = 5

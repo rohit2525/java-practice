@@ -1,4 +1,4 @@
-package com.example.array;
+package com.example.extra.array;
 
 /*
  * Given a sorted array of n distinct integers where each integer is in the range from 0 to m-1 and m > n.
